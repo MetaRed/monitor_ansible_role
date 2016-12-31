@@ -1,0 +1,39 @@
+---
+language: python
+python: "2.7"
+sudo: false
+services:
+  - docker
+
+env:
+  matrix:
+    - ANSIBLE_TAG=percona-server
+    - ANSIBLE_TAG=percona-xtradb
+
+# Install ansible
+addons:
+  apt:
+    packages:
+    - python-pip
+
+before_install:
+  # Install ansible
+  - pip install ansible==2.2.0.0
+  - pip install molecule==1.16.0
+  - pip install docker-py==1.10.6
+  - ansible-galaxy install MetaRed.percona
+
+  # Check ansible version
+  - ansible --version
+
+  # Create ansible.cfg with correct roles_path
+  - printf '[defaults]\nroles_path=../' >ansible.cfg
+
+script:
+  # Basic role syntax check
+  - molecule syntax
+  - molecule converge -- --tags=${ANSIBLE_TAG},prometheus-server,node-exporter,mysqld-exporter
+  - molecule verify
+
+notifications:
+  webhooks: https://galaxy.ansible.com/api/v1/notifications/
