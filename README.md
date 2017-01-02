@@ -3,7 +3,7 @@ Monitor Ansible Role
 [![Build Status](https://travis-ci.org/MetaRed/monitor_ansible_role.svg?branch=master)](https://travis-ci.org/MetaRed/monitor_ansible_role)
 [![codecov](https://codecov.io/gh/MetaRed/monitor_ansible_role/branch/master/graph/badge.svg)](https://codecov.io/gh/MetaRed/monitor_ansible_role)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Ansible Role: version](https://img.shields.io/badge/Ansible Role-v0.0.1-blue.svg)](https://github.com/MetaRed/monitor_ansible_role/releases/tag/v0.0.1)
+[![Ansible Role: version](https://img.shields.io/badge/Ansible Role-v0.0.2-blue.svg)](https://github.com/MetaRed/monitor_ansible_role/releases/tag/v0.0.2)
 
 
 Ansible role installs software used for the monitoring and alerting of operating systems and services.
