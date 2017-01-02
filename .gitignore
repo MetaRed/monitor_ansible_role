@@ -16,4 +16,4 @@ vars/*
 .molecule.yml
 
 # Coverage
-coverage/*
+.*coverage/*
