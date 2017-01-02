@@ -21,6 +21,7 @@ before_install:
   - pip install ansible==2.2.0.0
   - pip install molecule==1.16.0
   - pip install docker-py==1.10.6
+  - pip install pytest-cov==2.4.0
   - ansible-galaxy install MetaRed.percona
 
   # Check ansible version
@@ -37,3 +38,11 @@ script:
 
 notifications:
   webhooks: https://galaxy.ansible.com/api/v1/notifications/
+  on_success: always
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
+
+branches:
+  only:
+    - master
