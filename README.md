@@ -1,5 +1,6 @@
 Monitor Ansible Role
 ====================
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5bbc8a8b74c34e40861a74a129ede970)](https://www.codacy.com/app/code_6/monitor_ansible_role?utm_source=github.com&utm_medium=referral&utm_content=MetaRed/monitor_ansible_role&utm_campaign=badger)
 [![Build Status](https://travis-ci.org/MetaRed/monitor_ansible_role.svg?branch=master)](https://travis-ci.org/MetaRed/monitor_ansible_role)
 [![codecov](https://codecov.io/gh/MetaRed/monitor_ansible_role/branch/master/graph/badge.svg)](https://codecov.io/gh/MetaRed/monitor_ansible_role)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
